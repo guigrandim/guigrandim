@@ -1,8 +1,8 @@
 # Guilherme Grandim
 
-**Analytics Engineer → Data Engineering** · Campinas, SP
+**Data Science** · Campinas, SP
 
-Construo pipelines de análise e produtos de dados com Python — de EDA exploratória até dashboards interativos deployados. Em transição ativa para Data Engineering, com roadmap em AWS, PySpark e Airflow.
+Cientista de Dados com background em alta performance esportiva, construindo soluções em Python de EDA e Machine Learning até dashboards interativos deployados em produção
 
 ---
 
