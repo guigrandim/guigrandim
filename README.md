@@ -43,7 +43,7 @@ Benchmarking comparativo de 18 algoritmos (Classificação · Regressão · Clus
 ## Formação
 
 - **Eng. de Computação** · CRUZEIRO DO SUL
-- **MBA em Data Science** · USP
+- **MBA em Data Science e Analytics** · USP
 - **Mestrado em Biodinâmica** · UNICAMP
 
 ---
