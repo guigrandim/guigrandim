@@ -28,7 +28,7 @@ Dashboard Streamlit com 6 páginas interativas analisando o mercado global de vi
 
 ---
 
-### ☕ [Coffee Shop Analytics — 10 Hipóteses de Negócio](https://github.com/guigrandim/coffe_shopping)
+### ☕ [Coffee Shop Analytics — 11 Hipóteses de Negócio](https://github.com/guigrandim/coffe_shopping)
 Análise de 149.116 transações de uma rede de 3 cafeterias. Descoberta central: crescimento de +103,8% foi 100% volumétrico — ticket médio flat em R$4,69 durante 6 meses. Cada +R$0,50 por transação representa +R$75k/ano sem novos clientes.
 
 🔗 [**Dashboard →**](https://guigrandim.github.io/coffe_shopping/design-system/index.html)
