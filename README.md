@@ -1,8 +1,8 @@
 # Guilherme Grandim
 
-**Data Science** · Campinas, SP
+**Data Scientist & Data Analyst** · Campinas, SP
 
-Cientista de Dados com background em alta performance esportiva, construindo soluções em Python de EDA e Machine Learning até dashboards interativos deployados em produção
+Cientista e Analista de Dados com background em alta performance esportiva, construindo soluções em Python de EDA e Machine Learning até dashboards interativos deployados em produção
 
 ---
 
