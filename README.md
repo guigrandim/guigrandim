@@ -21,6 +21,13 @@ Cientista e Analista de Dados com background em alta performance esportiva, cons
 
 ## Projetos em destaque
 
+### 🏪 [Rossmann Store Sales — Previsão de Vendas com ML em Produção](https://github.com/guigrandim/rossmann_store_sales)
+Modelo XGBoost treinado com cross-validation temporal para prever as vendas das próximas 6 semanas de 1.115 farmácias na Alemanha, seguindo metodologia CRISP-DS completa (10 etapas). Seleção de features via Boruta, encoding cíclico de variáveis temporais e tradução do erro em cenários financeiros: intervalo pessimista–otimista de R$1,69M sobre R$284M previstos para a rede. MAPE final ~13% vs estimativas manuais por gerente sem base estatística.
+
+🔗 [**Bot no Telegram →**] (https://t.me/rossmann_gg_bot) *(envie o número da loja e receba a previsão)*
+
+---
+
 ### 🎮 [BrasCo Gaming — Visão Estratégica & ROI](https://github.com/guigrandim/video_games_sales)
 Dashboard Streamlit com 6 páginas interativas analisando o mercado global de video games para orientar alocação de capital em novos títulos. Arquitetura Medallion (Bronze → Silver → Gold), análise geopolítica de sinergia desenvolvedor × publisher, e modelo de rentabilidade por gênero com threshold de score alvo.
 
@@ -42,9 +49,9 @@ Benchmarking comparativo de 18 algoritmos (Classificação · Regressão · Clus
 
 ## Formação
 
-- **Eng. de Computação** · CRUZEIRO DO SUL
-- **MBA em Data Science e Analytics** · USP
-- **Mestrado em Biodinâmica** · UNICAMP
+- **Eng. de Computação** · UNICSUL (UNIVERSIDADE CRUZEIRO DO SUL)
+- **MBA em Data Science e Analytics** · USP (UNIVERSIDADE DE SÃO PAULO)
+- **Mestrado em Biodinâmica do Movimento Humano** · UNICAMP (UNIVERSIDADE ESTADUAL DE CAMPINAS)
 
 ---
 
