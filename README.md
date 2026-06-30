@@ -1,22 +1,20 @@
-# Guilherme Grandim
+# Olá, sou Guilherme Grandim 👋
 
-**Data Scientist & Data Analyst** · Campinas, SP
-
-Cientista e Analista de Dados com background em alta performance esportiva, construindo soluções em Python de EDA e Machine Learning até dashboards interativos deployados em produção
+**Data Scientist & Analista de Dados** | Python · SQL · Power BI · Machine Learning · BI & Analytics · IA Generativa
+ 
+📍 Campinas, SP
+📧 gui.grandim@gmail.com · [LinkedIn](https://www.linkedin.com/in/guilherme-grandim) · [Portfólio](https://guigrandim.github.io/portifolio_projetos/)
 
 ---
-
-## Stack
-
-**Dados & Análise**
-`Python` `SQL` `Pandas` `NumPy` `Scikit-learn` `XGBoost` `LightGBM`
-
-**Visualização & Produto**
-`Streamlit` `Plotly` `Power BI` `Looker Studio`
-
-**Engenharia**
-`Git` `Medallion Architecture` `Jupyter` `Linux` `Claude Code`
-
+ 
+## Sobre mim
+ 
+Cientista de Dados e Analista de Dados especializado em projetos ponta a ponta — da exploração dos dados brutos até modelos em produção e dashboards estratégicos que suportam decisões de negócio com impacto mensurável.
+ 
+Meu background em analytics de performance esportiva (Vasco da Gama, Cruzeiro, Corinthians) me treinou para trabalhar sob pressão com dados incompletos, entregar insights rápidos e comunicar resultados com clareza para stakeholders não técnicos.
+ 
+Construindo portfólio de Data Science com metodologia **CRISP-DS**, focado em analytics de negócio, modelagem preditiva e soluções de BI em produção.
+ 
 ---
 
 ## Projetos em destaque
@@ -47,16 +45,41 @@ Benchmarking comparativo de 18 algoritmos (Classificação · Regressão · Clus
 
 ---
 
-## Formação
-
-- **Eng. de Computação** · UNICSUL (UNIVERSIDADE CRUZEIRO DO SUL)
-- **MBA em Data Science e Analytics** · USP (UNIVERSIDADE DE SÃO PAULO)
-- **Mestrado em Biodinâmica do Movimento Humano** · UNICAMP (UNIVERSIDADE ESTADUAL DE CAMPINAS)
-
+## 🛠️ Stack
+ 
+```
+Analytics & BI:       Power BI · Looker Studio · Streamlit · Plotly
+Linguagens & Dados:   Python · SQL · Pandas · NumPy
+Machine Learning:     XGBoost · LightGBM · Scikit-learn · Feature Engineering · Cross-Validation
+Metodologia:          CRISP-DS · ETL · EDA · Estatística Inferencial · A/B Testing
+Deploy & Dev:         Flask · Git · GitHub · Render
+IA & LLMs:            Claude Code · MCP (Model Context Protocol) · AI Agents
+```
+ 
 ---
 
-## Contato
+## 📚 Em Estudo
+ 
+```
+☁️  Cloud: GCP (BigQuery · Looker) · AWS (S3 · SageMaker)
+```
+---
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-guigrandim-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/guilherme-grandim/)
-[![Gmail](https://img.shields.io/badge/Gmail-gui.grandim@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:gui.grandim@gmail.com)
-
+## 🎓 Formação
+ 
+| Curso | Instituição | Ano |
+|---|---|---|
+| MBA em Data Science e Analytics | Universidade de São Paulo (USP) | 2025 |
+| Bacharelado em Engenharia da Computação | Universidade Cruzeiro do Sul | 2025 |
+| Mestrado em Biodinâmica do Movimento Humano | Universidade Estadual de Campinas (UNICAMP) | 2015 |
+| Bacharelado em Educação Física | Universidade Estadual de Campinas (UNICAMP) | 2012 |
+ 
+---
+ 
+## 📄 Publicações
+ 
+5 artigos científicos publicados durante o Mestrado na UNICAMP — análise de performance esportiva e modelagem estatística aplicada ao futebol.
+ 
+Coautor do prefácio: *Manual Estratégico para a(o) Fisiologista no Futebol* (2026) · ISBN 978-65-02-03727-0
+ 
+---
