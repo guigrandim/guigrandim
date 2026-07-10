@@ -26,6 +26,13 @@ Modelo XGBoost treinado com cross-validation temporal para prever as vendas das 
 
 ---
 
+### 🫁 [Respiratory Diseases Classifier — Triagem de Doenças Respiratórias com ML](https://github.com/guigrandim/respiratory-diseases)
+Pipeline ponta a ponta sobre dados públicos do SIVEP-Gripe (Ministério da Saúde) para classificar automaticamente 5 categorias de doenças respiratórias (Influenza, outro vírus respiratório, outro agente etiológico, não especificado, COVID-19) a partir dos dados de primeiro atendimento. Dados consultados via AWS Athena (awswrangler) e exportados para Parquet, com feature engineering sobre 76 colunas originais (faixa etária, score de comorbidades, macrorregião, sazonalidade epidemiológica cíclica, score vacinal). Modelo XGBoost multiclasse com early stopping e pesos balanceados por classe, servido via AWS Lambda e consumido por uma interface Streamlit containerizada (Docker + ECS/Fargate). Pensado como baseline de apoio à triagem médica — não como decisão clínica automatizada.
+
+🔗 [**Repositório →**](https://github.com/guigrandim/respiratory-diseases)
+
+---
+
 ### 🎮 [BrasCo Gaming — Visão Estratégica & ROI](https://github.com/guigrandim/video_games_sales)
 Dashboard Streamlit com 6 páginas interativas analisando o mercado global de video games para orientar alocação de capital em novos títulos. Arquitetura Medallion (Bronze → Silver → Gold), análise geopolítica de sinergia desenvolvedor × publisher, e modelo de rentabilidade por gênero com threshold de score alvo.
 
