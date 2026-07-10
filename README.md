@@ -29,7 +29,7 @@ Modelo XGBoost treinado com cross-validation temporal para prever as vendas das 
 ### 🫁 [Respiratory Diseases Classifier — Triagem de Doenças Respiratórias com ML](https://github.com/guigrandim/respiratory-diseases)
 Pipeline ponta a ponta na AWS para classificar 5 categorias de doenças respiratórias (Influenza, outro vírus respiratório, outro agente etiológico, não especificado, COVID-19) a partir de dados públicos do SIVEP-Gripe/DATASUS. Dados brutos no S3, catalogados via Glue Catalog e consultados ad-hoc via Athena; feature engineering (faixa etária, score de comorbidades, macrorregião, sazonalidade epidemiológica cíclica, score vacinal) e treino do modelo XGBoost multiclasse rodam em notebook no SageMaker, com comparação entre `multi:softmax` e `multi:softprob` para avaliar classe prevista vs. distribuição de probabilidade por categoria. Artefato final persistido no S3, inferência servida via AWS Lambda (container XGBoost) e consumida por um formulário Streamlit em ECS Fargate com scale-to-zero (`desiredCount=0` por padrão, ativado sob demanda para reduzir custo). Permissionamento entre todos os serviços gerenciado via IAM. Pensado como baseline de apoio à triagem médica — não como decisão clínica automatizada.
 
-🔗 [**Repositório →**](https://github.com/guigrandim/respiratory-diseases)
+🔗 [[**App ao vivo →**](https://jlqsegnebs6r6sy7sn3ebxskxy0ihkkx.lambda-url.us-east-1.on.aws/ ) *(a primeira visita pode levar ~1-2 minutos para acordar o ECS)*
 
 ---
 
