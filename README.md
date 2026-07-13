@@ -29,7 +29,7 @@ O problema da rede de farmácias Rossmann era planejar o orçamento de reformas 
 ### 🫁 [Respiratory Diseases Classifier — Triagem de Doenças Respiratórias com ML](https://github.com/guigrandim/respiratory-diseases)
 Diante do desafio da Health Bridge Solutions de otimizar o direcionamento de pacientes com desconforto respiratório, recebi a tarefa de informatizar a triagem em papel e criar um modelo de Machine Learning como baseline de apoio à decisão, classificando 5 categorias de doenças sem risco clínico. Para isso, utilizei dados do DATASUS como proxy no Amazon S3/Glue/Athena, treinei um modelo XGBoost multiclasse no SageMaker avaliando a incerteza preditiva pelas funções softmax e softprob, e desenvolvi um formulário digital em Streamlit integrado à inferência serverless via AWS Lambda. Como resultado, entreguei uma solução segura via IAM que apresentou 68% de acurácia e F1 ponderado de 0,67 em teste, enquanto o isolamento da lógica computacional do pipeline completo em arquitetura Serverless (Lambda) reduziu o custo operacional de nuvem (OPEX) para apenas R$ 0,02 por requisição, gerando uma economia de escala projetada de milhares de reais anuais frente a servidores ligados continuamente.
 
-🔗 [[**App ao vivo →**](https://jlqsegnebs6r6sy7sn3ebxskxy0ihkkx.lambda-url.us-east-1.on.aws/ ) *(a primeira visita pode levar ~1-2 minutos para acordar o ECS)*
+🔗 [**App ao vivo →**](https://jlqsegnebs6r6sy7sn3ebxskxy0ihkkx.lambda-url.us-east-1.on.aws/ ) *(a primeira visita pode levar ~1-2 minutos para acordar o ECS)*
 
 ---
 
