@@ -20,48 +20,90 @@ Construindo portfólio de Data Science com metodologia **CRISP-DS**, focado em a
 ## Projetos em destaque
 
 ### 🏪 [Rossmann Store Sales — Previsão de Vendas com ML em Produção](https://github.com/guigrandim/rossmann_store_sales)
-O problema da rede de farmácias Rossmann era planejar o orçamento de reformas de suas mais de 1.115 lojas, o CFO necessitava de previsões de vendas precisas para as próximas seis semanas, mitigando o erro das estimativas manuais e descentralizadas dos gerentes. Recebi a tarefa de desenvolver um modelo de Machine Learning robusto capaz de capturar as nuances de faturamento de cada filial, considerando fatores como sazonalidade, promoções e dias de fechamento. Para isso, a partir da metodologia CRISP-DS construi uma análise exploratória rigorosa (10 etapas) realizando engenharia de features com encoding cíclico, seleção via Boruta, comparação de 5 algoritmos com cross-validation temporal, tuning de XGBoost via Random Search e deploy de API Flask no Heroku integrada a bot do Telegram. Como resultado, entreguei um pipeline de previsão ponta a ponta com um MAPE geral estabilizado em ~13% e erro entre cenário pessimista e otimista de R$ 1,69 milhão em toda a rede (sobre R$ 284 milhões previstos) permitindo ao CFO mitigar desvios de planejamento financeiro e otimizar a alocação de Capex em reformas, protegendo o fluxo de caixa contra uma exposição desnecessária.
+O CFO da Rossmann precisava de previsões de vendas para as próximas seis semanas em 1.115+ lojas para substituir estimativas manuais dos gerentes e planejar o orçamento de reformas com mais precisão.
 
-🔗 [**Bot no Telegram →**] (https://t.me/rossmann_gg_bot) *(envie o número da loja e receba a previsão)*
+- EDA em 10 etapas via CRISP-DS, com encoding cíclico para sazonalidade e seleção de features via Boruta
+- Comparação de 5 algoritmos com cross-validation temporal; XGBoost ajustado via Random Search
+- API Flask no Heroku com bot de Telegram para consulta de previsões por filial
+
+Resultado: MAPE de ~13%; diferença entre cenário pessimista e otimista de R$ 1,69 milhão sobre R$ 284 milhões previstos para toda a rede.
+
+🔗 [**Bot no Telegram →**](https://t.me/rossmann_gg_bot) *(envie o número da loja e receba a previsão)*
 
 ---
 
 ### 🫁 [Respiratory Diseases Classifier — Triagem de Doenças Respiratórias com ML](https://github.com/guigrandim/respiratory-diseases)
-Diante do desafio da Health Bridge Solutions de otimizar o direcionamento de pacientes com desconforto respiratório, recebi a tarefa de informatizar a triagem em papel e criar um modelo de Machine Learning como baseline de apoio à decisão, classificando 5 categorias de doenças sem risco clínico. Para isso, utilizei dados do DATASUS como proxy no Amazon S3/Glue/Athena, treinei um modelo XGBoost multiclasse no SageMaker avaliando a incerteza preditiva pelas funções softmax e softprob, e desenvolvi um formulário digital em Streamlit integrado à inferência serverless via AWS Lambda. Como resultado, entreguei uma solução segura via IAM que apresentou 68% de acurácia e F1 ponderado de 0,67 em teste, enquanto o isolamento da lógica computacional do pipeline completo em arquitetura Serverless (Lambda) reduziu o custo operacional de nuvem (OPEX) para apenas R$ 0,02 por requisição, gerando uma economia de escala projetada de milhares de reais anuais frente a servidores ligados continuamente.
+A Health Bridge Solutions precisava otimizar o direcionamento de pacientes com desconforto respiratório, substituindo a triagem em papel por um modelo de ML capaz de classificar 5 categorias de doenças sem risco clínico.
+
+- Dados do DATASUS como proxy, ingeridos e consultados via Amazon S3, Glue e Athena
+- XGBoost multiclasse treinado no SageMaker com avaliação de incerteza preditiva via softmax e softprob
+- Formulário digital em Streamlit com inferência serverless via Lambda e controle de acesso por IAM
+
+Resultado: 68% de acurácia e F1 ponderado de 0,67 em teste; R$ 0,02 por requisição, com economia projetada de milhares de reais anuais frente a servidores contínuos.
 
 🔗 [**App ao vivo →**](https://jlqsegnebs6r6sy7sn3ebxskxy0ihkkx.lambda-url.us-east-1.on.aws/ ) *(a primeira visita pode levar ~1-2 minutos para acordar o ECS)*
 
 ---
 
 ### 🎮 [BrasCo Gaming — Visão Estratégica & ROI](https://github.com/guigrandim/video_games_sales)
-Devido a alta competitividade e dinamismo do mercado global de games, uma startup necessitava identificar quais fatores (como plataformas, gêneros e regiões) maximizam o sucesso comercial de um título para direcionar seus investimentos de forma assertiva. Recebi a tarefa de realizar uma análise de dados aprofundada sobre o histórico de vendas globais para mapear o comportamento do consumidor, ciclos de vida de consoles e assimetrias regionais de mercado. Para isso, conduzi uma análise exploratória robusta (EDA), tratei dados históricos de lançamentos, utilizei arquitetura medallion (Bronze/Silver/Gold), avaliei a correlação entre avaliações e performance financeira, e construí visualizações estratégicas focadas em tendências macro de consumo. Como resultado, entreguei um report analítico estruturado que identificou mercado da América do Norte concentrando 37% do market share global, a Microsoft como uma empresa com menor custo por ponto de score (US$ 0,32M) e defini a nota-alvo de 7,5 para mitigação de risco em novos lançamentos mitigando o risco de investimento em títulos com histórico de saturação de mercado.
+A BrasCo Gaming precisava identificar quais fatores maximizam o sucesso comercial de um título antes de alocar investimentos em novos lançamentos.
+
+- EDA sobre histórico de vendas globais com arquitetura medallion (Bronze/Silver/Gold) para tratamento e camadas de dados
+- Análise de correlação entre avaliações de crítica e performance financeira por plataforma, gênero e região
+- Visualizações estratégicas focadas em tendências macro de consumo e ciclos de vida de consoles
+
+Resultado: América do Norte concentra 37% do market share global; Microsoft apresenta o menor custo por ponto de score (US$ 0,32M); nota-alvo de 7,5 definida para mitigação de risco em novos lançamentos.
 
 🔗 [**App ao vivo →**](https://brasco-videogames-sales.streamlit.app) *(pode levar ~30s para inicializar)*
 
 ---
 ### ⚡ [Análise de Compras Públicas de Componentes Elétricos](https://github.com/guigrandim/eletric_supply)
-A área de Suprimentos de uma distribuidora de energia precisava entender os padrões de compra pública de componentes e condutores elétricos para negociar melhor com fornecedores e prever o gasto do próximo exercício fiscal. Recebi a tarefa de analisar 164.680 registros de contratações públicas (CATMAT 59 e 61, 2021–2026) e criei hipóteses de negócio que embasassem decisões de Suprimentos. Para isso, construí um pipeline via API do ComprasNet com schema estrela em SQLite, conduzi EDA, testei 4 hipóteses estatísticas e comparei modelos de projeção trimestral de gasto (naive sazonal vs. XGBoost vs. Holt-Winters). Como resultado, identifiquei em uma economia potencial de R$492 milhões (≈31% do gasto total) ao segmentar itens por regime de elasticidade em vez de negociar no agregado, mapeei que a sazonalidade de jan-fev era orçamentária e não de mercado, encontrei relação no qual itens comprados de forma irregular têm mais dependência de fornecedor (ρ=-0,458) e entreguei uma projeção de gasto 2027 de ≈R$368,4 milhões com o modelo naive sazonal superando o XGBoost (MAPE 17,6% vs. 20,0%).
+A área de Suprimentos de uma distribuidora de energia precisava entender os padrões de compra de componentes e condutores elétricos para negociar melhor com fornecedores e projetar o gasto do próximo exercício fiscal.
+
+- Pipeline via API do ComprasNet com 164.680 registros de contratações públicas (CATMAT 59 e 61, 2021-2026) em schema estrela no SQLite
+- EDA com teste de 4 hipóteses estatísticas sobre elasticidade de preço, sazonalidade e concentração de fornecedores
+- Comparação de modelos de projeção trimestral: naive sazonal, XGBoost e Holt-Winters
+
+Resultado: Economia potencial de R$492 milhões (≈31% do gasto total) ao segmentar itens por elasticidade; sazonalidade de jan-fev identificada como orçamentária, não de mercado; compras irregulares com maior dependência de fornecedor (ρ=-0,458); projeção de gasto 2027 de ≈R$368,4 milhões com naive sazonal superando XGBoost (MAPE 17,6% vs. 20,0%).
 
 🔗 [**App ao vivo →**](https://eletricsupply.streamlit.app) *(pode levar ~30s para inicializar)*
 
 ---
 
 ### ☕ [Coffee Shop Analytics — 11 Hipóteses de Negócio](https://github.com/guigrandim/coffe_shopping)
-Uma rede de cafeterias identificou que necessitava otimizar sua eficiência operacional e aumentar o faturamento diário, a gestão precisava entender o comportamento de compra dos clientes para evitar desperdícios de estoque e identificar gargalos de atendimento. Recebi a tarefa de analisar o histórico de transações financeiras e operacionais para mapear os horários de pico, os produtos mais rentáveis e os padrões de consumo cruzado. Para isso, realizei uma análise exploratória de dados (EDA) detalhada, limpei e estruturei os dados de vendas, avaliei a sazonalidade horária e semanal do faturamento e identifiquei a correlação entre categorias de produtos. Como resultado entreguei que o faturamento cresceu +103,8% (Jan→Jun) 100% via volume (ticket médio flat em R$4,69), identifiquei um pico de 36,7% da receita diária concentrado em 3 horas e categoria com ticket 5× maior subexplorada com recomendação de upsell estimada em +R$75 mil/ano.
+A gestão de uma rede de cafeterias precisava entender o comportamento de compra dos clientes para evitar desperdício de estoque, identificar gargalos de atendimento e direcionar esforços de venda.
+
+- EDA sobre histórico de transações com limpeza e estruturação dos dados de vendas
+- Análise de sazonalidade horária e semanal do faturamento
+- Mapeamento de correlação entre categorias de produtos e padrões de consumo cruzado
+
+Resultado: Faturamento cresceu +103,8% (Jan→Jun) integralmente via volume (ticket médio flat em R$4,69); 36,7% da receita diária concentrada em 3 horas; categoria com ticket 5× maior subexplorada, com potencial de upsell estimado em +R$75 mil/ano.
 
 🔗 [**Dashboard →**](https://guigrandim.github.io/coffe_shopping/)
 
 ---
 
 ### 🛵 [Curry Company — Dashboard de Visão Estratégica](https://github.com/guigrandim/curry_company_project)
-Devido ao crescimento acelerado do marketplace de delivery Curry Company, a diretoria executiva enfrentava dificuldades para acompanhar a operação em tempo real e monitorar a eficiência das três principais frentes: a empresa, os entregadores e os restaurantes. Recebi a tarefa de centralizar e estruturar os dados operacionais dispersos, criando uma ferramenta analítica unificada que permitisse à gestão tomar decisões táticas e estratégicas rápidas baseadas em métricas de performance. Para isso, limpei e transformei os dados brutos utilizando Pandas, realizei análises de geolocalização e eficiência de entregas, e desenvolvi um painel interativo em Streamlit dividido em visões específicas para cada pilar do negócio. Como resultado, entreguei um painel analítico centralizado que identificou um SLA de entrega em 69,4% (meta ≤30min) sobre 41.419 pedidos e apliquei um Random Forest que atingiu R² = 0,652 (vs. 0,428 da regressão linear), revelando que entregas simultâneas (20,5% de importância) é o principal driver do tempo de entrega.
+A diretoria da Curry Company não tinha visibilidade em tempo real sobre as três frentes da operação: a empresa, os entregadores e os restaurantes.
+
+- Limpeza e transformação dos dados brutos com Pandas, com análises de geolocalização e eficiência de entregas
+- Painel interativo em Streamlit com visões segmentadas por pilar do negócio
+- Random Forest para identificar os drivers do tempo de entrega
+
+Resultado: SLA de entrega em 69,4% (meta ≤30min) sobre 41.419 pedidos; Random Forest com R²=0,652 vs. 0,428 da regressão linear; entregas simultâneas apontadas como principal driver (importância de 20,5%).
 
 🔗 [**App ao vivo →**](https://currycompanyproject-ggsolutions.streamlit.app) *(pode levar ~30s para inicializar)*
 
 ---
 
 ### 🤖 [Ensaios de Algoritmos de ML](https://github.com/guigrandim/ensaios_algoritmos_ml)
-Diante do risco de subotimização e custos elevados em produção ao escolher algoritmos de Machine Learning sem um embasamento estatístico claro, times de dados necessitam de um framework padronizado para avaliar o comportamento de modelos sob diferentes cenários de complexidade. Recebi a tarefa de conduzir um ensaio tecnológico robusto para realizar o benchmarking de algoritmos de Classificação, Regressão e Agrupamento, mapeando rigorosamente o impacto do ajuste de hiperparâmetros. Para isso, estruturei um ambiente experimental em Python, manipulei diferentes conjuntos de dados (treino, validação e teste), implementei métricas de avaliação criteriosas (como F1-Score, RMSE e Silhouette) e avaliei o comportamento de modelos desde Árvores de Decisão até algoritmos de Ensemble. Como resultado, entreguei um repositório de governança e validação de modelos que identificou a Random Forest como lider na classificação (F1 = 0,9591, Acurácia 96,5%) a XGBoost lider na regressão (R² = 0,3678) e a KMeans (K=3) superando Affinity Propagation em clusterização (Silhouette = 0,2330), gerando um guia de boas práticas de tuning consolidado e eliminando custos ocultos de infraestrutura decorrentes de modelos superdimensionados (overfitting).
+Times de dados raramente têm um benchmark estruturado para escolher algoritmos com base em evidência estatística. Este repositório padroniza esse processo para Classificação, Regressão e Agrupamento.
+
+- Ambiente experimental em Python com conjuntos de dados separados em treino, validação e teste
+- Avaliação com métricas por tarefa: F1-Score e Acurácia (classificação), RMSE e R² (regressão), Silhouette (agrupamento)
+- Benchmarking de Árvores de Decisão a algoritmos de Ensemble, com mapeamento do impacto de hiperparâmetros
+
+Resultado: Random Forest líder em classificação (F1=0,9591, Acurácia 96,5%); XGBoost líder em regressão (R²=0,3678); KMeans (K=3) superando Affinity Propagation em clusterização (Silhouette=0,2330); guia consolidado de boas práticas de tuning para evitar overfitting em produção.
 
 ---
 
