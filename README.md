@@ -1,6 +1,6 @@
 # Olá, sou Guilherme Grandim 👋
 
-**Data Scientist & Analista de Dados** | Python · SQL · Power BI · Machine Learning · BI & Analytics · IA Generativa
+**Data Scientist & Analista de Dados** | Python · SQL · AWS · Power BI · Machine Learning · BI & Analytics · IA Generativa
  
 📍 Campinas, SP
 📧 gui.grandim@gmail.com · [LinkedIn](https://www.linkedin.com/in/guilherme-grandim) · [Portfólio](https://guigrandim.github.io/portifolio_projetos/)
@@ -37,6 +37,12 @@ Diante do desafio da Health Bridge Solutions de otimizar o direcionamento de pac
 Devido a alta competitividade e dinamismo do mercado global de games, uma startup necessitava identificar quais fatores (como plataformas, gêneros e regiões) maximizam o sucesso comercial de um título para direcionar seus investimentos de forma assertiva. Recebi a tarefa de realizar uma análise de dados aprofundada sobre o histórico de vendas globais para mapear o comportamento do consumidor, ciclos de vida de consoles e assimetrias regionais de mercado. Para isso, conduzi uma análise exploratória robusta (EDA), tratei dados históricos de lançamentos, utilizei arquitetura medallion (Bronze/Silver/Gold), avaliei a correlação entre avaliações e performance financeira, e construí visualizações estratégicas focadas em tendências macro de consumo. Como resultado, entreguei um report analítico estruturado que identificou mercado da América do Norte concentrando 37% do market share global, a Microsoft como uma empresa com menor custo por ponto de score (US$ 0,32M) e defini a nota-alvo de 7,5 para mitigação de risco em novos lançamentos mitigando o risco de investimento em títulos com histórico de saturação de mercado.
 
 🔗 [**App ao vivo →**](https://brasco-videogames-sales.streamlit.app) *(pode levar ~30s para inicializar)*
+
+---
+### ⚡ [Análise de Compras Públicas de Componentes Elétricos](https://github.com/guigrandim/eletric_supply)
+A área de Suprimentos de uma distribuidora de energia precisava entender os padrões de compra pública de componentes e condutores elétricos para negociar melhor com fornecedores e prever o gasto do próximo exercício fiscal. Recebi a tarefa de analisar 164.680 registros de contratações públicas (CATMAT 59 e 61, 2021–2026) e criei hipóteses de negócio que embasassem decisões de Suprimentos. Para isso, construí um pipeline via API do ComprasNet com schema estrela em SQLite, conduzi EDA, testei 4 hipóteses estatísticas e comparei modelos de projeção trimestral de gasto (naive sazonal vs. XGBoost vs. Holt-Winters). Como resultado, identifiquei em uma economia potencial de R$492 milhões (≈31% do gasto total) ao segmentar itens por regime de elasticidade em vez de negociar no agregado, mapeei que a sazonalidade de jan-fev era orçamentária e não de mercado, encontrei relação no qual itens comprados de forma irregular têm mais dependência de fornecedor (ρ=-0,458) e entreguei uma projeção de gasto 2027 de ≈R$368,4 milhões com o modelo naive sazonal superando o XGBoost (MAPE 17,6% vs. 20,0%).
+
+🔗 [**App ao vivo →**](https://eletricsupply.streamlit.app) *(pode levar ~30s para inicializar)*
 
 ---
 
