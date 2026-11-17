@@ -45,6 +45,19 @@ Resultado: 68% de acurácia e F1 ponderado de 0,67 em teste; R$ 0,02 por requisi
 
 ---
 
+### 🏘️ [Airbnb Amsterdam — Comparador de Diárias com Machine Learning](https://github.com/guigrandim/airbnb_price)
+Comparar diárias em Amsterdam exige considerar o bairro e as características do imóvel. Com dados públicos do Inside Airbnb de dezembro de 2018, desenvolvi um simulador para comparar o preço anunciado com uma referência estimada pelo modelo.
+
+- Base com 17.021 anúncios para desenvolvimento e 3.005 para avaliação histórica
+- Comparação de sete estimadores e ajuste de hiperparâmetros com Optuna; LightGBM escolhido para a aplicação
+- Simulador em Streamlit que mostra a diferença entre o preço anunciado e a referência prevista, em euros e percentual
+
+Resultado: MAPE de 25,98% e MAE de € 38,95 no teste histórico. Em uma análise de 20.026 anúncios, aplicar as referências de preço projetou +€ 2,05 milhões (+1,75%) no volume bruto anual de reservas, mantendo constantes as noites estimadas. É uma projeção, não um ROI realizado.
+
+🔗 [**App ao vivo →**](https://airbnbprice.streamlit.app/)
+
+---
+
 ### 🎮 [BrasCo Gaming — Visão Estratégica & ROI](https://github.com/guigrandim/video_games_sales)
 A BrasCo Gaming precisava identificar quais fatores maximizam o sucesso comercial de um título antes de alocar investimentos em novos lançamentos.
 
@@ -57,6 +70,7 @@ Resultado: América do Norte concentra 37% do market share global; Microsoft apr
 🔗 [**App ao vivo →**](https://brasco-videogames-sales.streamlit.app) *(pode levar ~30s para inicializar)*
 
 ---
+
 ### ⚡ [Análise de Compras Públicas de Componentes Elétricos](https://github.com/guigrandim/eletric_supply)
 A área de Suprimentos de uma distribuidora de energia precisava entender os padrões de compra de componentes e condutores elétricos para negociar melhor com fornecedores e projetar o gasto do próximo exercício fiscal.
 
