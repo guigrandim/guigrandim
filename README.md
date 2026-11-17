@@ -114,19 +114,13 @@ Analytics & BI:       Power BI · Looker Studio · Streamlit · Plotly
 Linguagens & Dados:   Python · SQL · Pandas · NumPy
 Machine Learning:     XGBoost · LightGBM · Scikit-learn · Feature Engineering · Cross-Validation
 Cloud (AWS):          S3 · Glue Catalog · Athena · SageMaker · Lambda · ECR · ECS/Fargate · IAM
-Deploy & Infra:       Docker · Flask · Git · GitHub · Render
+Deploy & Infra:       Docker · Flask · Git · GitHub · Render · AzureDevOps · Azure Databricks
 Metodologia:          CRISP-DS · ETL · EDA · Estatística Inferencial · A/B Testing
-IA & LLMs:            Claude Code · MCP (Model Context Protocol) · AI Agents
+IA & LLMs:            Claude Code · Codex · MCP (Model Context Protocol) · AI Agents
 ```
  
 ---
 
-## 📚 Em Estudo
- 
-```
-☁️  Cloud: GCP (BigQuery · Looker)
-```
----
 
 ## 🎓 Formação
  
