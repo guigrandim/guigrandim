@@ -52,7 +52,7 @@ Comparar diárias em Amsterdam exige considerar o bairro e as características d
 - Comparação de sete estimadores e ajuste de hiperparâmetros com Optuna; LightGBM escolhido para a aplicação
 - Simulador em Streamlit que mostra a diferença entre o preço anunciado e a referência prevista, em euros e percentual
 
-Resultado: MAPE de 25,98% e MAE de € 38,95 no teste histórico. Em uma análise de 20.026 anúncios, aplicar as referências de preço projetou +€ 2,05 milhões (+1,75%) no volume bruto anual de reservas, mantendo constantes as noites estimadas. É uma projeção, não um ROI realizado.
+Resultado: MAPE de 23,30% e MAE de € 37,57 no teste histórico. Em uma análise de 20.026 anúncios, aplicar as referências de preço projetou +€ 2,05 milhões (+1,75%) no volume bruto anual de reservas, mantendo constantes as noites estimadas.
 
 🔗 [**App ao vivo →**](https://airbnbprice.streamlit.app/)
 
@@ -149,7 +149,7 @@ IA & LLMs:            Claude Code · Codex · MCP (Model Context Protocol) · AI
  
 ## 📄 Publicações
  
-5 artigos científicos publicados durante o Mestrado na UNICAMP — análise de performance esportiva e modelagem estatística aplicada ao futebol.
+6 artigos científicos publicados durante o Mestrado na UNICAMP — análise de performance esportiva e modelagem estatística aplicada ao futebol.
  
 Coautor do prefácio: *Manual Estratégico para a(o) Fisiologista no Futebol* (2026) · ISBN 978-65-02-03727-0
  
